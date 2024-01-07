@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="shortcut icon" href="kindle.png" type="image/x-icon">
+  <title>Lincoln PK</title>
+</head>
+
+<body>
+
+  <style>
+body{
+    background-image: url(assets/background.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat:no-repeat;
+
+    
+}
+
+
+#nav-top{
+    border-bottom: 1px solid black;
+    box-shadow: 2px 2px 2px black;
+}
+
+.nav-link{
+background-color: none;
+text-transform: none;
+transition: 0.3s;
+-webkit-transition: 0.3s;
+}
+
+.nav-link:hover{
+background-color: rgba(241, 240, 240,0.5);
+text-transform: uppercase;
+transition: 0.3s;
+-webkit-transition: 0.3s;
+}
+
+    section {
+      padding: 60px 0px;
+      backdrop-filter: blur(0px);
+    
+    }
+
+    .author {
+      position: absolute;
+      top: 15px;
+      height: 100%;
+backdrop-filter: none;
+
+    }
+
+    #africa{
+      filter: brightness(0.6) drop-shadow(2px 2px 2px black);
+    
+    }
+
+    #value{
+      filter:drop-shadow(2px 2px 2px black);
+    }
+
+
+    .brand-logo{
+      filter: brightness(0.3);
+
+    }
+
+    .slide{
+      filter:drop-shadow(2px 2px 2px black);
+    }
+
+    .board{
+      filter:drop-shadow(2px 2px 2px black);
+    }
+  </style>
+
+  <!-- navbar -->
+
+  <nav class="navbar navbar-expand-md navbar-light" id="nav-top">
+    <div class="container-xxl">
+      <a href="index.html" class="navbar-brand">
+        <span class="fw-bold text-secondary">
+          LINCOLN PK
+        </span>
+        <a href="index.html">
+        <img src="assets/logo.png" class="brand-logo" width="200px" alt="LPK">
+        </a>
+      </a>
+
+
+      <!-- toggle btn for mobile -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
+        aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- navbar-links -->
+      <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="#topics" class="nav-link fw-bold">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a href="#carouselExampleCaptions" class="nav-link fw-bold">Sponsors</a>
+          </li>
+
+          <li class="nav-item ms-2 d-inline">
+            <a href="#cards" class="btn my-3 btn-outline-light">DONATE NOW</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!--TOPICS-->
+
+  <section id="topics">
+    <div class="container-md">
+      <div class="text-center text-black display-2 fw-bold">
+        <h2>The business insider</h2>
+        <p class="lead text-black fw-bold">A quick glance at our mission, values and goals</p>
+      </div>
+
+      <div class="row  g-3 justify-content-between align-items-center">
+        <div class="col-12 col-lg-4">
+          <img src="assets/african.jpg" class="img-fluid" alt="ebook" id="africa">
+        </div>
+
+        <!--accordion-->
+        <div class="col-lg-6" id="value">
+          <div class="accordion" id="chapters">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading-1">
+                <button class="accordion-button bg-secondary fw-bold text-black" type="button" data-bs-toggle="collapse" data-bs-target="#chapter-1"
+                  aria-expanded="true" aria-controls="chapter-1">
+                  OUR MISSION
+                </button>
+              </h2>
+              <div id="chapter-1" class="accordion-collapse collapse show" aria-labelledby="heading-1"
+                data-bs-parent="#chapters">
+                <div class="accordion-body bg-dark text-light fst-italic">
+                  <p>Our mission is to provide vital humanitarian assistance throughout the world to alleviate the sufferingg of those affected by any form of crisis.</p>
+                  <p> Our goal is to address immediate needs, promote long-term recovery and restore a sense of hope in the community.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading-2">
+                <button class="accordion-button bg-secondary fw-bold text-black" type="button" data-bs-toggle="collapse" data-bs-target="#chapter-2"
+                  aria-expanded="true" aria-controls="chapter-2">
+                  OUR VISION
+                </button>
+              </h2>
+              <div id="chapter-2" class="accordion-collapse collapse" aria-labelledby="heading-2"
+                data-bs-parent="#chapters">
+                <div class="accordion-body bg-dark text-light fst-italic">
+                  <p>Our vision is to create a ray of hope to the hopeless,to support the community through the help of our sponsors. Together we can create a world where suffering is no longer visible</p>
+                </div>
+              </div>
+            </div>
+
+</section>
+
+            
+
+
+<div id="carouselExampleCaptions" class="carousel slide my-3 mx-5 slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner ">
+
+    <div class="carousel-item active">
+      <img src="assets/sponsor.jpeg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-block">
+        <h5>OUR TOP SPONSOR</h5>
+        <p>Mr Badr Jafar is a prominent business-man and philantropist, he has supported this journey for 3years</p>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="assets/kids.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-block">
+        <h5>A HAPPY LIFE</h5>
+        <p>let's make our world a happy place once again.</p>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="assets/asian.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-block">
+        <h5>END SUFFERING</h5>
+        <p>Let us end this suffering together, with your help this can be achieved</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+
+
+<div class="row my-4 mx-0 align-items-center justify-content-between" id="cards">
+  <div class="col-sm-8 col-md-5 col-lg-4 board">
+    <div class="card border-0 m-3 bg-black text-light">
+      <div class="card-body text-center py-4">
+        <h4 class="card-title">SPONSORS</h4>
+        <p class="lead text-light card-subtitle">Become a sponsor</p>
+        <p class="card-text mx-5 d-none d-lg-block">your contribution counts</p>
+        <a href=mailto:Kardosnis@gmail.com?subject=SPONSORSHIP class="btn btn-outline-light btn-lg mt-3">
+          Send us an Email to become a sponsor
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-8 col-md-5 col-lg-4 board">
+    <div class="card border-0 m-3 bg-light text-black">
+      <div class="card-body text-center py-4">
+        <h4 class="card-title">CUSTOMER service</h4>
+        <p class="lead card-subtitle">An answer to all your questions</p>
+        <p class="card-text mx-5 d-none d-lg-block">super fast replies </p>
+        <a href=mailto:Kardosnis@gmail.com?subject=problem class="btn btn-outline-dark btn-lg mt-3">
+          Contact our customer service
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="footer text-center text-black">
+  <p class="fw-bolder"> @2018-2024 LINCOLN PK <br> Additional info: you can claim your sponsor badge after a successful donation of over $1000</p>
+</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
